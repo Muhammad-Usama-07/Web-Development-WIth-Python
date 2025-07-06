@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grocery_dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grocery Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Grocery Dashboard</h1>
+  <div class="dashboard">
+    <h1>Analysis of Monthly Grocery</h1>
+    <h2>Dashboard</h2>
+
+    <div class="grid">
+      <div class="card total">
+        <h3>Total Cost</h3>
+        <div class="amount">$532</div>
+      </div>
+
+      <div class="card pie">
+        <h3>Cost by Category</h3>
+        <canvas id="categoryChart"></canvas>
+      </div>
+
+      <div class="card line">
+        <h3>Spending Trend</h3>
+        <canvas id="trendChart"></canvas>
+      </div>
+
+      <div class="card bar">
+        <h3>Top Products</h3>
+        <canvas id="topProductsChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
